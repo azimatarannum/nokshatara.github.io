@@ -1,0 +1,630 @@
+html{
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* import your own @font-face */
+@font-face {
+    /* name it something you can call easily */
+    font-family: 'tara';
+    /* url of where the tff file is located in Github */
+    src: url('Tara-Regular.tff');
+    /* url of where the tff file is located on your laptop */
+    src: local('Tara-Regular'),
+         url('Tara-Regular.ttf') format('truetype');
+}
+
+.navigation h1 {
+  font-family: 'tara';
+  font-size: 6vw;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.navigation .logo{
+  text-decoration: none;
+}
+.navigation .logo:visited {
+  color: black;
+  margin: 0 30px;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+}
+
+.navigation p {
+  text-align: center;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 20px;
+  font-weight: normal;
+  opacity: 0;
+  /* transition: all 0.2s; */
+  animation: 0.5s linear 1s fadeIn both;
+  margin-bottom: 30px;
+}
+
+.navigation nav{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.navigation nav a{
+  font-family: 'tara';
+  font-size: 40px;
+  margin: 0px 10px;
+  text-decoration: none;
+  align-items: center;
+  padding: 8px 15px;
+  background: #FAEDD2;
+  border-radius: 30px;
+}
+
+.navigation nav a:visited {
+  color: #B1836F;
+  margin: 0 30px;
+  align-items: center;
+}
+
+.navigation nav a:hover{
+  padding: 8px 15px;
+  background: #762602;
+  color: white;
+  border-radius: 30px;
+  align-items: center;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-size-adjust: none;
+}
+
+/* gallery css stuff */
+
+.gallery-image a:visited {
+  color: white;
+  margin: 0 30px;
+  align-items: center;
+}
+
+/* .gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
+
+.gallery-image {
+  display: grid;
+  width:900px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.gallery-image img {
+  height: 300px;
+  width: 300px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+  font-family:'Bodoni Moda', serif;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  right: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-family: 'Bodoni Moda', serif;
+}
+
+.transparent-box {
+  height: 300px;
+  width: 300px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img {
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+
+/* MY WORK CSS
+-----------------------------------------*/
+/* text */
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 20px;
+  color: #762602;
+}
+
+/* grid */
+.wrapper {
+  display: grid;
+  width:900px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: repeat(2,1fr);
+  gap: 50px;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+/* sphere video */
+.video_1 {
+  height: 100%;
+  width: 400px;
+  margin: auto;
+}
+
+/* sphere flexslider */
+.flexslider {
+  width: 400px;
+  height:100%;
+  display: inline-block;
+  background-color: rgb(247, 223, 177);
+  border: none;
+  border-bottom: 0px;
+  padding: 0;
+  margin: 0;
+  box-shadow: none! important;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* goosebump sketch */
+.sketch {
+  width: 400px;
+  margin: auto;
+}
+
+/* text */
+.text_sketch {
+  place-self: center;
+  padding: 20px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 20px;
+  color: #762602;
+}
+
+/* text */
+.text_colour {
+  place-self: center;
+  padding: 20px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 20px;
+  color: #762602;
+}
+
+.colour {
+  width: 400px;
+  margin: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.video_2 {
+  width: 400px;
+  margin: auto;
+}
+
+/* text */
+.video_text {
+  place-self: center;
+  padding: 20px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 20px;
+  color: #762602;
+}
+
+.goosebump {
+  width: 400px;
+  margin: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* text */
+.text_occasion {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 20px;
+  color: #762602;
+}
+
+.occasion_flexslider {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+
+/* COMMISSIONS CSS
+-----------------------------------------*/
+
+/* commissions page intro line */
+.commissions_intro {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 20px;
+  width: 900px;
+  margin: auto;
+  margin-bottom: 20px;
+  color: #762602;
+}
+
+/* 2 column grid of animal illustration + sticker example */
+.animal_sticker{
+  display: grid;
+  width:900px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: repeat(2,1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  image-rendering: -webkit-optimize-contrast;
+  grid-gap: 25px;
+  margin: auto;
+}
+
+/* img css of the illustration + sticker */
+.animal_sticker img {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+/* caption for the animal + sticker */
+.animal_sticker p {
+  display: grid;
+  text-align: center;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 15px;
+  color: #762602;
+  padding: auto;
+  width: 400px;
+  margin: auto;
+}
+
+/* full body commission image */
+.full_body {
+  padding-top: 20px;
+  justify-content: center;
+  width: 900px;
+  margin: auto;
+  display: flex;
+}
+
+/* some more commission done text */
+.done_commissions {
+  padding-top: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 20px;
+  color: #762602;
+}
+
+/* commissions grid */
+.commissions_img{
+  display: grid;
+  width: 900px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: repeat(2,1fr);
+  grid-row-gap: 2px;
+  image-rendering: -webkit-optimize-contrast;
+  margin: auto;
+  /* margin-left: 100px;
+  margin-right: 100px; */
+}
+
+/* commissions grid images */
+.commissions_img img {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+/* commissions grid captions */
+.commissions_img p {
+  display: grid;
+  text-align: center;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 15px;
+  color: #762602;
+  padding: auto;
+  width: 300px;
+  margin: auto;
+}
+
+/* terms_conditions title */
+.terms_conditions p{
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 30px;
+  color: #762602;
+}
+
+/* terms_conditions image */
+.terms_conditions img{
+  border-radius: 30px;
+  justify-content: center;
+  display: flex;
+  width: 900px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+/* terms_conditions text */
+.terms_conditions .more_text{
+  margin: auto;
+  text-align: justify;
+  width: 850px;
+  margin-bottom: 20px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 20px;
+  color: #762602;
+}
+
+/* FAQ */
+.terms_conditions .faq {
+  margin: auto;
+  text-align: center;
+  width: 850px;
+  margin-bottom: 10px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 30px;
+  color: #762602;
+}
+
+/* FAQ title */
+.terms_conditions .faq_title {
+  margin: auto;
+  text-align: justify;
+  width: 850px;
+  margin-bottom: 10px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 20px;
+  color: #762602;
+}
+
+/* FAQ text */
+.terms_conditions .faq_text {
+  margin: auto;
+  text-align: justify;
+  width: 850px;
+  margin-bottom: 10px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 19px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+/* form Title */
+.form_text{
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 30px;
+  color: #762602;
+}
+
+/* form */
+.contact_form{
+  display: grid;
+  width: 900px;
+  grid-template-columns: 1fr 1fr;
+  /* image-rendering: -webkit-optimize-contrast; */
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.contact_form img{
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+form {
+  width: 400px;
+  margin: auto;
+}
+
+.feedback-input {
+  color: white;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 10px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #B1836F;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border:2px solid #762602;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: 'Bodoni Moda', serif;
+  width: 100%;
+  background: #B1836F;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  font-weight: 700;
+  text-align: center;
+}
+
+[type="submit"]:hover {
+  background: #762602
+}
+
+
+/* ABOUTME CSS
+-----------------------------------------*/
+
+.circle_me img{
+  justify-content: center;
+  width: 300px;
+  margin: auto;
+  display: flex;
+}
+
+.description {
+  text-align: justify;
+  justify-content: center;
+  width: 700px;
+  font-family: 'Bodoni Moda', serif;
+  color: #762602;
+  margin: auto;
+}
+
+.images_me{
+  display: grid;
+  width: 700px;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2px;
+  grid-gap: 1px;
+  margin: auto;
+  /* margin-left: 100px;
+  margin-right: 100px; */
+}
+
+.images_me img {
+  width: 200px;
+  height: 274px;
+  margin: auto;
+  border-radius: 40px;
+  /* image-rendering: -webkit-optimize-contrast; */
+  margin-bottom: 50px;
+}
+
+/* FOOTER STYLES
+-----------------------------------------*/
+/* Sticky Footer - http://css-tricks.com/snippets/css/sticky-footer */
+
+.page-wrap {
+  /* min-height: 100%; */
+  /* margin: 0 auto; */
+  /* margin-bottom: -55px; /* must be the same height as footer */
+}
+
+
+footer {
+  text-align: center;
+}
+
+/* text */
+footer p{
+  font-family: 'tara';
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+
+footer a {
+  color: #762602;
+  font-family: 'tara';
+  font-size: 20px;
+  margin: 0px 10px;
+  text-decoration: none;
+  align-items: center;
+  padding: 8px 15px;
+  background: #FAEDD2;
+  border-radius: 30px;
+}
+
+footer a:visited {
+  color: #762602;
+  margin: 0 30px;
+  text-align: center;
+}
+
+footer a:hover{
+  padding: 8px 15px;
+  background: #762602;
+  color: white;
+  border-radius: 30px;
+  align-items: center;
+}
+
+
+.copyright {
+  font-family: 'Bodoni Moda', serif;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 10px;
+}

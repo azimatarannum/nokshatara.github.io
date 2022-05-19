@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <!-- this will show on the tab part -->
+    <title> nokshatara </title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- fonts from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap" rel="stylesheet">
+
+    <!-- Flexslider information -->
+    <link rel="stylesheet" href="flexslider.css" type="text/css">
+
+    <!-- link the css file -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="jquery.flexslider.js"></script>
+
+    <!-- Flexslider: Place in the <head>, after the three links -->
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "slide",
+          controlNav: true,
+          animationLoop: true,
+          slideshow: false,
+          asNavFor: '#slider',
+          itemWidth: 400,
+          itemHeight: 'auto',
+        });
+      });
+    </script>
+
+
+  </head>
+
+  <body>
+    <header>
+
+      <!-- logo + navigation bar -->
+      <div class="navigation">
+
+        <h1> <a class="logo" href="index.html">nokshatara</a></h1>
+        <p> bringing in the creativity from the stars! </p>
+
+        <nav>
+          <a href="index.html">home</a>
+          <a href="mywork.html">my work</a>
+          <a href="commissions.html">commissions</a>
+          <a href="https://www.redbubble.com/people/zeemz/shop?asc=u" target="_blank">shop</a>
+          <a href="aboutme.html">about me</a>
+        </nav>
+
+      </div>
+
+    </header>
+
+
+    <div class="page-wrap">
+    <main>
+      <p class="intro"> Take a look at how I create my work! </p>
+
+      <div class="wrapper">
+
+        <!-- box 1: process video for sphere -->
+        <video class ="video_1" controls loop src="images/Process_Video_Sphere.mp4"></video>
+
+        <!-- box 2: Flexslider of the sphere comic -->
+        <div class="flexslider">
+          <ul class="slides">
+
+            <li>
+              <img src="images/sphere_1.jpg" />
+            </li>
+
+            <li>
+              <img src="images/sphere_2.jpg" />
+            </li>
+
+            <li>
+              <img src="images/sphere_3.jpg" />
+            </li>
+
+            <li>
+              <img src="images/sphere_4.jpg" />
+            </li>
+
+            <li>
+              <img src="images/sphere_5.jpg" />
+            </li>
+
+            <li>
+              <img src="images/sphere_6.jpg" />
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- box 3: goosebump process image 1 -->
+        <img class="sketch" src="images/process_1.jpg"></img>
+
+        <!-- box 4: text description -->
+        <div class="text_sketch">
+            <p> When I start a project, I like to sketch it out on my notebook first. Here's how I started the "Goosebump" series! First I was doodling little geese and I decided to make it a pun with the word goosebump. I roughly sketched out the girl shivering and then planned on zooming in to her hand to show little geese fistbumping.</p>
+        </div>
+
+        <!-- box 5: text description of coloring process -->
+        <div class="text_colour">
+          <p> Once I am happy with my sketch, I either take a picture of it and put it on Procreate to trace over it, or I just draw from scratch again. For this one, since it was already a simple sketch, I decided to draw it again on my iPad. Once I made the basic outline, I chose my colour palette and filled in the base colours.</p>
+        </div>
+
+        <!-- box 6: goosebump process image 2 -->
+        <img class="colour" src="images/process_2.jpg"></img>
+
+        <!-- box 7: goosebump video process -->
+        <video class="video_2" controls loop src="images/goosebumps_process.mp4"></video>
+
+        <!-- box 8: video process text -->
+        <div class="video_text">
+            <p> Here you will see a timelapse of my work from the beginning. First I sketched, then outlined, then filled in the base colours. I used layers to show shadows and highlights. For the magnified section I did the same and tried to keep it simple and not add too many details. Here's my completed work!</p>
+        </div>
+
+        <!-- box 9: goosebump 1 -->
+        <img class="goosebump" src="images/goosebump_1.jpg"></img>
+
+        <!-- box 10: goosebump 2 -->
+        <img class="goosebump" src="images/goosebump_2.jpg"></img>
+
+      </div>
+
+      <!-- text for the occasion comic -->
+      <p class="text_occasion"> Here's another comic that I wrote and drew!</p>
+
+      <!-- Flexslider of the occasion comic -->
+      <div class="occasion_flexslider">
+        <div class="flexslider">
+          <ul class="slides">
+
+            <li>
+              <img src="images/occasion_1.jpg" />
+            </li>
+
+            <li>
+              <img src="images/occasion_2.jpg" />
+            </li>
+
+            <li>
+              <img src="images/occasion_3.jpg" />
+            </li>
+
+            <li>
+              <img src="images/occasion_4.jpg" />
+            </li>
+
+            <li>
+              <img src="images/occasion_5.jpg" />
+            </li>
+
+            <li>
+              <img src="images/occasion_6.jpg" />
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </main>
+    </div>
+
+
+
+    <footer>
+      <p> Keep up with me here! </p>
+      <a href="https://instagram.com/nokshatara"> @nokshatara</a>
+      <p class="copyright"> © Azima Tarannum 2022; You are not allowed to use these images without written permission. </p>
+    </footer>
+
+  </body>
+
+</html>
